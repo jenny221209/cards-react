@@ -24,10 +24,22 @@
     - [11. CARPETA UTILS](#11.-CARPETA-UTILS)
     - [12. CARPETA MUTATIONS](#12.-CARPETA-MUTATIONS)
     - [13. CARPETA QUERYS](#13.-CARPETA-QUERYS)
+    - [14. IMAGEN DE LA ESTRUCTURA DE CARPETAS](#14.-IMAGEN-DE-LA-ESTRUCTURA-DE-CARPETAS)
 
+- [REACT - REACT.JS - REACTJS](#REACT---REACT.JS---REACTJS)
+    - [React es Declarativa](#React-es-Declarativa)
+    - [React esta basada en componentes](#React-esta-basada-en-componente)
+    - [Programacion reactiva](#Programacion-reactiva)
+    - [Usa el Virtual DOM y Diffing](#Usa-el-Virtual-DOM-y-Diffing) 
+    - [Eventos sinteticos (Soluciona el problema antiguo de los eventos click)](#Eventos-sinteticos-(Soluciona-el-problema-antiguo-de-los-eventos-click))
+    - [Server Side Rendering](#Server-Side-Rendering)
+    - [JSX](#JSX)
+         
 <br><br>
 
 ## REQUISITOS
+
+<br>
 
 ### 1. Instalacion de NodeJS
 
@@ -52,7 +64,7 @@
 
 <br>
 
-### 2. Instalacion de NPM, YARN o NPX
+### 2. Instalacion de NPM  O YARN 
 
     * NPX (Recomendado)
 
@@ -93,10 +105,12 @@
 
 <br> <br>
 
-
 * =======================================================================================================================================
 
+<br> <br>
+
 ## CONVENSIONES & ACUERDOS - NC
+<br>
 
 ### 1. CREACIÓN DE PROYECYOS
        * La creación de proyectos se hara con el paquete o comando create-react-app, Y se usara NPX en lugar de NPM. 
@@ -207,6 +221,9 @@
 
         Ejemplo de carpeta: querys
 
+### 14. IMAGEN DE LA ESTRUCTURA DE CARPETAS
+
+<img src="src/assets/img/carpetas-react.png">
 
 
 
@@ -216,134 +233,138 @@
 
 
 
-<br> <br>
+
+<br><br>
 
 * =======================================================================================================================================
+<br><br> 
 
+## REACT - REACT.JS - REACTJS
 
-## REACT
-<br><br>
+<br>
 
 ### React es Declarativa
 
+<br>
+
 Programación Declarativa vs Programación Imperativa
 
-* Diferencias
-En los programas imperativos un porcentaje muy alto del código está dedicado a controlar la secuencia de ejecución. En un lenguaje declarativo no existen dichas instrucciones.
-Los lenguajes declarativos ofrecen menores costos de desarrollo y mayor ﬁabilidad debido al menor número de líneas que son requeridas, lo que conlleva a un menor número de errores
+    * Diferencias
+        En los programas imperativos un porcentaje muy alto del código está dedicado a controlar la secuencia de ejecución. En un lenguaje declarativo no existen dichas instrucciones.
+        Los lenguajes declarativos ofrecen menores costos de desarrollo y mayor ﬁabilidad debido al menor número de líneas que son requeridas, lo que conlleva a un menor número de errores
 
-* Programación Declarativa Programación Imperativa
-La programación declarativa describe el problema que se quiere solucionar, pero no las instrucciones necesarias para hacerlo, mientras que en la programación imperativa se detallan las instrucciones necesarias para llegar a la solución.
-Los programas declarativos incluyen menos detalles que sus contrapartidas imperativas.
+    * Programación Declarativa Programación Imperativa
+        La programación declarativa describe el problema que se quiere solucionar, pero no las instrucciones necesarias para hacerlo, mientras que en la programación imperativa se detallan las instrucciones necesarias para llegar a la solución.
+        Los programas declarativos incluyen menos detalles que sus contrapartidas imperativas.
 
-Ejemplo
+        Ejemplo
 
-* Imperativo
-    1. Ve a la cocina
-    2. Abre la nevera
-    3. Coge el pollo
-    4. Prepara el pollo
-    5. Sirve el pollo
+    * Imperativo
+        1. Ve a la cocina
+        2. Abre la nevera
+        3. Coge el pollo
+        4. Prepara el pollo
+        5. Sirve el pollo
 
-* Declarativa
+    * Declarativa
 
-    1. Quiero pollo
+        1. Quiero pollo
 
 <br><br>
 
 ### React esta basada en componentes
 
 
-* Divide la interfaz en trozos mas pequeños y reusables.
+    * Divide la interfaz en trozos mas pequeños y reusables.
 
-* Puedes crear nuevos componentes usando componentes mas pequeños.
+    * Puedes crear nuevos componentes usando componentes mas pequeños.
 
-* Cada componente encapsula su estado.
+    * Cada componente encapsula su estado.
 
-* Codigo mas reusable, Pequeño y mantenible.
+    * Codigo mas reusable, Pequeño y mantenible.
 
-<br><br>
+<br>
 
 ### Programacion reactiva
 
-* Cada componente "Reacciona" y se vueleve a renderizar cuando se produze un cambio de estado o le llegan nuevas propiedades
 
-<br><br>
+    * Cada componente "Reacciona" y se vueLve a renderizar cuando se produce un cambio de estado (estate) o le llegan nuevas propiedades (props)
+
+<br>
 
 
 ### Usa el Virtual DOM y Diffing
 
 * Genera una copia del arbol de elementos del navegador para solo hacer los minimos cambios necesarios para reflejar el estado de nuestro componentes.
+
 <br>
-
 <img src="src/assets/img/virtual-dom.png" width="500px">
-
-<br><br><br>
+<br><br>
 
 
 ### Eventos sinteticos (Soluciona el problema antiguo de los eventos click)
 
-* Abstracion de los eventos nativos de los navegadores
+    * Abstracion de los eventos nativos de los navegadores
 
-* Compatibilidad cross browsing sin necesidad de mas librerias
+    * Compatibilidad cross browsing sin necesidad de mas librerias
 
-* Soporte para todos los eventos que puedas necesitar desde click y double click, Hasta eventos moviles como touchstart y touchend.
+    * Soporte para todos los eventos que puedas necesitar desde click y double click, Hasta eventos moviles como touchstart y touchend.
 
 <br>
 
 ### Server Side Rendering
 
-* Puedes renderizar tu aplicacion de React desde el servidor, Perfecto para SEO y performance.
+    * Puedes renderizar tu aplicacion de React desde el servidor, Perfecto para SEO y performance.
 
 <br>
 
 
 ### JSX
 
-* Cosas que se pueden hacer con JSX
+    * Cosas que se pueden hacer con JSX
 
-const element = <h1> Hola Mundo </h1>;
+    const element = <h1> Hola Mundo </h1>;
 
-------------------------------------------------
+    ------------------------------------------------
 
-const element = <h1> { 2 + 2 } Hola Mundo </h1>;
+    const element = <h1> { 2 + 2 } Hola Mundo </h1>;
 
-------------------------------------------------
+    ------------------------------------------------
 
-function multiplicar (a, b) {
-    return a * b
-}
+    function multiplicar (a, b) {
+        return a * b
+    }
 
-const element = <h1> { multiplicar (2, 2) } Hola Mundo </h1>;
-
-<br>
-
-* Expresiones ternarias
-
-function multiplicar (a, b) {
-    return a * b
-}
-
-const mostrarMultiplicacion = true
-
-const element = <h1> { mostrarMultiplicacion ?  multiplicar (2, 2) : 'Nada que mostrar' } Hola Mundo </h1>;
-
-
-* Atributos
-
-const image = <img src='http://url-con-image.jpg' />
-
--------------------------------------------------------
-
-const url = 'http://url-con-image.jpg' 
-const image = <img src={url}>
+    const element = <h1> { multiplicar (2, 2) } Hola Mundo </h1>;
 
 <br>
 
-* Children (2 elementos de react guardados en una misma variable)
+    * Expresiones ternarias
 
-// Esto mo se puede hacer  
-const element = <h1> Hola</h1> <h2> Hola 2</h2> 
+    function multiplicar (a, b) {
+        return a * b
+    }
 
-// De esta forma si (Metidos en un DIV)
-const element = <div> <h1> Hola</h1> <h2> Hola 2</h2> </div> 
+    const mostrarMultiplicacion = true
+
+    const element = <h1> { mostrarMultiplicacion ?  multiplicar (2, 2) : 'Nada que mostrar' } Hola Mundo </h1>;
+
+
+    * Atributos
+
+    const image = <img src='http://url-con-image.jpg' />
+
+    -------------------------------------------------------
+
+    const url = 'http://url-con-image.jpg' 
+    const image = <img src={url}>
+
+    <br>
+
+    * Children (2 elementos de react guardados en una misma variable)
+
+    // Esto mo se puede hacer  
+    const element = <h1> Hola</h1> <h2> Hola 2</h2> 
+
+    // De esta forma si (Metidos en un DIV)
+    const element = <div> <h1> Hola</h1> <h2> Hola 2</h2> </div> 
