@@ -41,6 +41,10 @@
 - [DESARROLLO](#DESARROLLO)
     - [REACT Y REACT DOM](#REACT-Y-REACT-DOM)
     - [REACT Y REACT DOM](#REACT-Y-REACT-DOM)
+    - [COMPONENTES](#COMPONENTES)
+    - [COMPONENTE CON FUNTIONS](#COMPONENTE-CON-FUNTIONS)
+    - [COMPONENTE ARROW FUNTIONS](#COMPONENTE-ARROW-FUNTIONS)
+    - [COMPONENTES CON CLASES](#COMPONENTES-CON-CLASES)
 
          
 <br><br>
@@ -455,30 +459,88 @@ Genera una copia del arbol de elementos del navegador para solo hacer los minimo
 
         Si cargas React desde una etiqueta <script>, estas APIs de alto nivel estarán disponibles en la variable global ReactDOM. Si usas ES6 con npm, puedes escribir import ReactDOM from 'react-dom'. Si usas ES5 con npm, puedes escribir var ReactDOM = require('react-dom').
 
+### COMPONENTES
 
-    * Existen 2 formas en react para crear componentes. Con funciones o con clases
+    * Los componentes permiten separar la interfaz de usuario en piezas independientes, reutilizables y pensar en cada pieza de forma aislada.
 
-    *  CREAR COMPONENTES CON FUNCIONES :  
+    * Conceptualmente, los componentes son como las funciones de JavaScript. Aceptan entradas arbitrarias (llamadas “props”) y devuelven a 
+        React elementos que describen lo que debe aparecer en la pantalla.
+
+    * Existen 3 formas en react para crear componentes. Con funciones, Con Arrow Functions y Clases.
+
+    * Los componentes con funciones tiene una forma adicional de crearlos, que es el Arrow Funtions.
+
+### COMPONENTE CON FUNTIONS 
+
+    * La forma más sencilla de definir un componente es escribir una función de JavaScript:
+
+    * Esta función es un componente de React válido porque acepta un solo argumento de objeto “props” (que proviene de propiedades) con datos
+        y devuelve un elemento de React. Llamamos a dichos componentes “funcionales” porque literalmente son funciones JavaScript.
+
+    * Codigo ejemplo de componente creado con una función 
+
+    *  CREAR COMPONENTES CON FUNCIONES :
+
+        import React from "react";  
 
         function HolaMundo() {
 
-    return (
+        return (
 
-        <div>
-            <nav>
-                <ul>
-                    <li className="li-nav" > <a href=""> Inicio </a></li>
-                    <li className="li-nav" > <a href="">  Mundo </a></li>
-                </ul>
-            </nav>
-       
-
-        <h2> !! Hola Mundo !! </h2>
-        </div> 
-    );
-}
-
-export default HolaMundo;
-
+            <div>
+                <nav>
+                    <ul>
+                        <li className="li-nav" > <a href=""> Inicio </a></li>
+                        <li className="li-nav" > <a href="">  Mundo </a></li>
+                    </ul>
+                </nav>
         
-        
+
+            <h2> !! Hola Mundo !! </h2>
+            </div> 
+        );
+    }
+
+    export default HolaMundo;
+
+### COMPONENTE ARROW FUNTIONS 
+
+    * FUNCION FLECHA : Arrow Function = Funcion flecha 
+
+    * Es una forma rapida y nueva de hacer componentes  y salio en la version  ES6 - Ecma Script 2015
+
+    * Codigo ejemplo :
+
+
+        import React from "react";
+
+        const ComponenteArrowFunctions = () => <h2> Este es un componente Arrow Functions </h2> 
+
+        export default ComponenteArrowFunctions;
+
+### COMPONENTES CON CLASES 
+
+    * Los componentes con clases nacieron con el ES6 - ECMAScript 2015 
+
+    * Los componentes con clases tienen ciertas caracteristicas adicionales heredadas de React.Component que lo hacen en la mejor 
+        forma de crear componentes. 
+
+    * Algunas de las caracteristicas adicionales de componentes creados con clases es que se puede darle uso a los State y el Render.
+
+    * Codigo ejemplo : 
+
+        import React from "react";
+
+        class ComponenteConClases extends React.Component {
+
+            render() {
+                return(
+                    <h2> Este es un componente hecho con clases </h2>
+                );
+            }
+            
+        }
+
+        export default ComponenteConClases;
+                
+                

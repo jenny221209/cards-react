@@ -1,6 +1,22 @@
 
-const li_nav = {
+const nav = {
+    backgroundColor: '#B3B0C2'
+}
 
-    display: inline-block
 
-} 
+
+const li = {
+
+    display: 'inline-block',
+    margin: '15px'
+   
+    
+}
+
+const a ={
+    fontFamily: 'Verdana, Geneva, Tahoma, sans-serif',
+    fontSize: '18px',
+}
+
+
+export { li, nav }
