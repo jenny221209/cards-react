@@ -1,15 +1,13 @@
 
 import React from 'react';
 
-// COMPONENTS
-    import Buscar from './Buscar';
 
 // Style 
-import StylesNav from '../assets/styles/nav-buscar';
+import StylesNav from '../../assets/styles/menus/nav';
 
 // Assets
-import ImagenInicio from '../assets/img/home.svg';
-import ImagenMenu from '../assets/img/menu.svg';
+import ImagenInicio from '../../assets/img/home.svg';
+import ImagenMenu from '../../assets/img/menu.svg';
 
 class Menu extends React.Component {
 
@@ -35,9 +33,6 @@ class Menu extends React.Component {
                     </ul>
                   </div>
 
-                <div style={StylesNav.div_buscar} >
-                    < Buscar/>
-                </div>
               </nav>
             
         </div>
