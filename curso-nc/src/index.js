@@ -23,7 +23,7 @@ ReactDOM.render(
   <React.StrictMode>
    <Menu/>
   <MenuBuscar/>
-  <ComponenteConProps/>
+  <ComponenteConProps texto="SUMAR"/>
   <EstadoAlarma/>
 
   </React.StrictMode>,

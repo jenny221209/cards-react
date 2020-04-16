@@ -45,6 +45,8 @@
     - [COMPONENTE CON FUNTIONS](#COMPONENTE-CON-FUNTIONS)
     - [COMPONENTE ARROW FUNTIONS](#COMPONENTE-ARROW-FUNTIONS)
     - [COMPONENTES CON CLASES](#COMPONENTES-CON-CLASES)
+    - [PROPS (PROPIEDADES)](#PROPS-PROPIEDADES)
+    - [STATE (ESTADO)](#STATE-(ESTADO))
 
          
 <br><br>
@@ -458,6 +460,8 @@ Genera una copia del arbol de elementos del navegador para solo hacer los minimo
         como una vía de escape del modelo de React si así lo necesitas. La mayoría de tus componentes no deberían necesitar usar este módulo.
 
         Si cargas React desde una etiqueta <script>, estas APIs de alto nivel estarán disponibles en la variable global ReactDOM. Si usas ES6 con npm, puedes escribir import ReactDOM from 'react-dom'. Si usas ES5 con npm, puedes escribir var ReactDOM = require('react-dom').
+    
+   <br>
 
 ### COMPONENTES
 
@@ -469,6 +473,8 @@ Genera una copia del arbol de elementos del navegador para solo hacer los minimo
     * Existen 3 formas en react para crear componentes. Con funciones, Con Arrow Functions y Clases.
 
     * Los componentes con funciones tiene una forma adicional de crearlos, que es el Arrow Funtions.
+
+<br>
 
 ### COMPONENTE CON FUNTIONS 
 
@@ -503,6 +509,8 @@ Genera una copia del arbol de elementos del navegador para solo hacer los minimo
 
     export default HolaMundo;
 
+<br>
+
 ### COMPONENTE ARROW FUNTIONS 
 
     * FUNCION FLECHA : Arrow Function = Funcion flecha 
@@ -517,6 +525,8 @@ Genera una copia del arbol de elementos del navegador para solo hacer los minimo
         const ComponenteArrowFunctions = () => <h2> Este es un componente Arrow Functions </h2> 
 
         export default ComponenteArrowFunctions;
+
+<br>
 
 ### COMPONENTES CON CLASES 
 
@@ -542,5 +552,81 @@ Genera una copia del arbol de elementos del navegador para solo hacer los minimo
         }
 
         export default ComponenteConClases;
+
+<br>      
+
+### PROPS (PROPIEDADES)
+
+    * Los componentes permiten separar la interfaz de usuario en piezas independientes,
+        reutilizables y pensar en cada pieza de forma aislada.Esta página proporciona una introducción a la idea de los componentes.
+
+    * La forma más sencilla de definir un componente es escribir una función de 
+        JavaScript:
+
+        function Welcome(props) {
+            return <h1>Hello, {props.name}</h1>;
+        }
+
+        Esta función es un componente de React válido porque acepta un solo argumento de objeto “props” (que proviene de propiedades) con datos y devuelve un elemento de React. Llamamos a dichos componentes “funcionales” porque literalmente son funciones JavaScript.
+
+        * También puedes utilizar una clase de ES6 para definir un componente:
+
+            class Welcome extends React.Component {
+            render() {
+                return <h1>Hello, {this.props.name}</h1>;
+            }
+        }
+
+        Los dos componentes anteriores son equivalentes desde el punto de vista de React.
+        Tanto los componentes de función como de clase tienen algunas características adicionales que veremos en las próximas secciones.
+
+### STATE (ESTADO)
+
+    * El objeto state es donde almacena los valores de propiedad que pertenecen al 
+        componente.
+        Cuando el objeto state  cambia, El componente se vuelve a representar.
+
+    * El objeto state se puede inicializar directamente despues de la clase o en el  
+       constructor de la clase.
+
+    - state inicializado directamente:
+
+       class NombreClase {
+
+           state = {
+
+           }
+
+               render(){
+                   return();
+               }
+           }
+
+        export default NombreClase;
+
+
+
+       - state inicializado en el constructor junto con props:
+
+        class NombreClase {
+
+            constructor(props) {
+                super(props);
+                this.state = {
+                    state: false,
+                    nombre: "jenny"
+                    numero1: 0
+                };
+            }
+
+            render(){
+                return();
+            }
+        }
+
+        export default NombreClase;
+
+
+
                 
                 
