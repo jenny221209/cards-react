@@ -3,11 +3,7 @@ import ReactDOM from 'react-dom';
 
 
 // Componentes 
-import Menu from './components/menus/Nav';
-import MenuBuscar from './components/menus/Nav-Buscar'
-import ComponenteConProps from './components/curso/Props'
-import EstadoAlarma from './components/curso/State'
-
+import SectionsForm from './components/secctions/SectionForm';
 
 /*
 import HolaMundoCruel from "./components/HolaMundo";
@@ -21,10 +17,7 @@ import ComponenteConClases from './components/ComponentesConClases';
 
 ReactDOM.render(
   <React.StrictMode>
-   <Menu/>
-  <MenuBuscar/>
-  <ComponenteConProps texto="SUMAR"/>
-  <EstadoAlarma/>
+   <SectionsForm/>
 
   </React.StrictMode>,
   document.getElementById('root')

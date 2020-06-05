@@ -1,45 +1,53 @@
-
 import React from 'react';
 
+// Componentes Material UI
+import { makeStyles } from '@material-ui/core/styles';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import Button from '@material-ui/core/Button';
+import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/icons/Menu';
+import { render } from 'react-dom';
 
-// Style 
-import StylesNav from '../../assets/styles/menus/nav';
+const useStyles = makeStyles((theme) => ({
+    root: {
+      flexGrow: 1,
+    },
+    menuButton: {
+      marginRight: theme.spacing(2),
+    },
+    title: {
+      flexGrow: 1,
+    },
+  }));
 
-// Assets
-import ImagenInicio from '../../assets/img/home.svg';
-import ImagenMenu from '../../assets/img/menu.svg';
+  
 
-class Menu extends React.Component {
+function Nav() {
 
-    render()   {
-        
-        return(
-          <div>
+    const classes = useStyles();
 
-              <nav style={StylesNav.nav} >
-
-                <div style={StylesNav.div_nav}> 
-                    <ul>
-                        <img src={ImagenInicio} alt="" width="20px"/>
-                        <li style={StylesNav.li}> <a style={StylesNav.a} href=""> Inicio</a></li>
-                        <img src={ImagenMenu} alt=""  width="20px"/>
-                        <li style={StylesNav.li}> <a style={StylesNav.a} href=""> Menu 1</a></li>
-                        <img src={ImagenMenu} alt=""  width="20px"/>
-                        <li style={StylesNav.li}> <a style={StylesNav.a} href=""> Menu 2</a></li>
-                        <img src={ImagenMenu} alt=""  width="20px"/>
-                        <li style={StylesNav.li}> <a style={StylesNav.a} href=""> Menu 3</a></li>
-                        <img src={ImagenMenu} alt=""  width="20px"/>
-                        <li style={StylesNav.li}> <a style={StylesNav.a} href=""> Menu 4</a></li>
-                    </ul>
-                  </div>
-
-              </nav>
-            
+    return (
+        <div className={classes.root}>
+            <AppBar position="static">
+                <Toolbar>
+                    <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+                        <MenuIcon />
+                    </IconButton>
+                    <Typography variant="h6" className={classes.title}>
+                        Operaciones matemáticas
+          </Typography>
+                    <Button color="inherit">Suma</Button>
+                    <Button color="inherit">Resta</Button>
+                    <Button color="inherit">Multiplicación</Button>
+                    <Button color="inherit">División</Button>
+                </Toolbar>
+            </AppBar>
         </div>
-        );
-    } 
+
+    );
 }
 
+export default Nav;
 
-
-export default Menu;
