@@ -9,6 +9,9 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
 import FormSuma from '../../components/forms/FormSuma';
+import FormResta from '../../components/forms/FormResta';
+import FormMultiplicacion from '../../components/forms/FormMultiplicacion';
+import FormDivision from '../../components/forms/FormDivision';
 
 const useStyles = makeStyles({
   root: {
@@ -31,6 +34,8 @@ const useStyles = makeStyles({
   button: {
     backgroundColor: 'white'
   }
+
+
 });
 
 function SectionForm() {
@@ -42,6 +47,10 @@ function SectionForm() {
     <Card className={classes.root}>
       <CardContent>
         <FormSuma />
+        <FormResta />
+        <FormMultiplicacion />
+        <FormDivision />
+        
       </CardContent>
       <CardActions>
         <Typography className={classes.title} color="textSecondary" gutterBottom>

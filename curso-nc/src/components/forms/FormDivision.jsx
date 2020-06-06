@@ -3,33 +3,34 @@ import React from 'react';
 // Componentes Material UI
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
 // Iconos Material UI
-import DeleteIcon from '@material-ui/icons/Delete';
-import Suma from '@material-ui/icons/Add';
+import Borrar from '@material-ui/icons/Delete';
+import Division from '@material-ui/icons/LinkOff';
+
 
 const useStyles = makeStyles({
     root: {
-        minWidth: '23%',
-        maxWidth: '50%',
-        display: 'inline-block',
-        margin: '10px'
+      minWidth: '23%',
+      maxWidth: '50%',
+      display: 'inline-block',
+      margin: '10px'
     },
     bullet: {
-        display: 'inline-block',
-        margin: '0 2px',
-        transform: 'scale(0.8)',
+      display: 'inline-block',
+      margin: '0 2px',
+      transform: 'scale(0.8)',
     },
     title: {
-        fontSize: 14,
+      fontSize: 14,
     },
     pos: {
-        marginBottom: 12,
+      marginBottom: 12,
     },
 
     h3: {
@@ -37,37 +38,23 @@ const useStyles = makeStyles({
     },
 
     h4: {
-        color: 'gray',
-        display: 'flex',
-        float: 'center',
-        textAlign: 'center'
-        
-    },
-
-    textField: {
-      margin: '0 auto',
-      float: 'center',
-      textAlign: 'center',
-      //display: 'flex'
-      
+        color: 'gray'
     }
+  });
 
-
-});
-
-function FormSuma() {
-
+  function FormDivision () {
     const classes = useStyles();
     const bull = <span className={classes.bullet}>•</span>;
 
-    return (
+      return (
         <Card className={classes.root}>
 
-        <CardContent>
-         
-    <h4 className={classes.h4}>FORMULARIO SUMA </h4>
-    <br/>
-    <TextField
+      <CardContent>
+      <h4 className={classes.h4}>FORMULARIO DIVISION</h4>
+
+          <br/>
+
+      <TextField
           id="filled-number"
           label="Numero: 1"
           type="number"
@@ -75,12 +62,11 @@ function FormSuma() {
             shrink: true,
           }}
           variant="filled"
-          className={classes.textField}
-          />
+        />
 
-          <br/> <br/>
+        <br/> <br/>
 
-          <TextField
+        <TextField
           id="filled-number"
           label="Numero: 2"
           type="number"
@@ -88,37 +74,38 @@ function FormSuma() {
             shrink: true,
           }}
           variant="filled"
-          />
+        />
 
-        <br/>   
+        <br/>
 
-        <h4 className={classes.h4}> Total: </h4> 
-        <h3 className={classes.h3}> 0 </h3>   
-        </CardContent>
+        <h4 className={classes.h4}> Total: </h4>
+        <h3 className={classes.h3}> 0 </h3>
 
-        <CardActions>
-        <Button
+      </CardContent>
+      <CardActions>
+      <Button
         variant="contained"
         color="secondary"
         size="small"
         className={classes.button}
-        startIcon={<DeleteIcon />}
+        startIcon={<Borrar />}
       >
-          Borrar
-          </Button>
+        Borrar
+      </Button>
 
-          <Button
+      <Button
         variant="contained"
         color="primary"
         size="small"
         className={classes.button}
-        startIcon={<Suma />}
+        startIcon={<Division />}
       >
-        Sumar
+        Dividir
       </Button>
+      </CardActions>
+    </Card>
+      );
 
-        </CardActions>
-      </Card>
-    );
   }
-export default FormSuma;
+
+  export default FormDivision;

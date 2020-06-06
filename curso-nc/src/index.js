@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 
 // Componentes 
-import SectionsForm from './components/secctions/SectionForm';
+import OperacionesMatematicas from './views/1.basico/pages/OperacionesMatematicas';
 
 /*
 import HolaMundoCruel from "./components/HolaMundo";
@@ -17,7 +17,7 @@ import ComponenteConClases from './components/ComponentesConClases';
 
 ReactDOM.render(
   <React.StrictMode>
-   <SectionsForm/>
+  <OperacionesMatematicas/>
 
   </React.StrictMode>,
   document.getElementById('root')
