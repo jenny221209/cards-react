@@ -51,6 +51,7 @@
     - [COMPONENTES CREATIVE TIM](#COPMONENTES-CREATE-TIM)
     - [COMPONENTES NC](#COMPONENTES-NC)
     - [REACT-ROUTER-DOM](#REACT-ROUTER-DOM)
+    - [HISTORY](#HISTORY)
 
          
 <br><br>
@@ -701,6 +702,54 @@ Genera una copia del arbol de elementos del navegador para solo hacer los minimo
         - Redirect (Redireccionar): Redirect redirecciona a una ruta cuando el usuario ingresa una ruta erronea.
 
         - BrowserRouter (Enrutador de navegador): Almacena todas las    rutas.
+
+        - Link (Enlace): Link sirve para generar enlaces.
+            
+            Instalacion (consola):
+
+                npm i react-router-dom
+
+             Ejemplo:
+
+                import { Router, Switch, Route, Redirect } from 'react-router-dom';
+                import { createBrowserHistory } from "history";
+
+                    var hist = createBrowserHistory();
+
+                <Router history={hist}>
+                    <Switch>
+                        <Route exact path='/pagina2' component={Pagina2} />
+                        <Route exact path='/' component={PaginaInicio} />
+                        <Route />
+                        <Route />
+                         </Switch>
+                    </Router>
+
+### HISTORY
+
+    * history: Libreria o dependencia que se usa para almacenar un historial de rutas o secciones de un proyecto.
+
+        - Se suele usar como propiedad del Router 
+
+         Instalacio (consola): 
+
+         npm i history
+
+            Ejemplo:
+
+            import { Router, Switch, Route, Redirect } from 'react-router-dom';
+            import { createBrowserHistory } from "history";
+
+                var hist = createBrowserHistory();
+
+                <Router history={hist}>
+                    <Switch>
+                        <Route exact path='/pagina2' component={Pagina2} />
+                        <Route exact path='/' component={PaginaInicio} />
+                        <Route />
+                        <Route />
+                        </Switch>
+                    </Router>
 
 
 

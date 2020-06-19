@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Switch, Route, Redirect } from 'react-router-dom';
+import { Router, Switch, Route } from 'react-router-dom';
+import { createBrowserHistory } from "history";
 
 // Rutas
-
 import Pagina2 from './views/1.basico/pages/pagina2';
+import Pagina3 from './views/1.basico/pages/pagina3';
+import PaginaInicio from './views/1.basico/pages/PaginaInicio';
 
 
 
@@ -16,14 +18,16 @@ import ComponentesConArrowFunctions from './components/ComponentesConArrowFuncti
 import ComponenteConClases from './components/ComponentesConClases';
 */
 
-
+var hist = createBrowserHistory();
 
 ReactDOM.render(
   <React.StrictMode>
 
-    <Router>
+    <Router history={hist}>
       <Switch>
-        <Route path='/pagina2' component={Pagina2} />
+        <Route  path='/pagina2' component={Pagina2} />
+        <Route  path='/pagina3' component={Pagina3} />
+        <Route  path='/' component={PaginaInicio} />
         <Route />
         <Route />
       </Switch>
