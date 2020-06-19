@@ -3,16 +3,22 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 
+import { Router, Route, Switch } from "react-router";
+import { createBrowserHistory } from "history";
 
 
-// Componentes NC
-import Prueba from './views/components/Prueba';
-import Carrusel from 'views/components/Carrusel';
+// Rutas
+import Sectionheader from 'views/pages/PageFood-Burguer-01';
+
+var hist = createBrowserHistory();
 
 ReactDOM.render(
   <React.StrictMode>
-    <Prueba/>
-    <Carrusel/>
+   <Router history={hist}>
+    <Switch>
+      <Route path='/' component={Sectionheader} />
+    </Switch>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
