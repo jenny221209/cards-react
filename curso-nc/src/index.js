@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Router, Switch, Route, Redirect } from 'react-router-dom';
+
+// Rutas
+
+import Pagina2 from './views/1.basico/pages/pagina2';
 
 
-// Componentes 
-import OperacionesMatematicas from './views/1.basico/pages/OperacionesMatematicas';
 
 /*
 import HolaMundoCruel from "./components/HolaMundo";
@@ -17,7 +20,15 @@ import ComponenteConClases from './components/ComponentesConClases';
 
 ReactDOM.render(
   <React.StrictMode>
-  <OperacionesMatematicas/>
+
+    <Router>
+      <Switch>
+        <Route path='/pagina2' component={Pagina2} />
+        <Route />
+        <Route />
+      </Switch>
+    </Router>
+
 
   </React.StrictMode>,
   document.getElementById('root')
