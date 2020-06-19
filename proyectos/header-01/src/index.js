@@ -9,6 +9,8 @@ import { createBrowserHistory } from "history";
 // Componentes NC 
 import Prueba_Header from 'views/components/prueba-header';
 
+
+
 var hist = createBrowserHistory();
 
 ReactDOM.render(
