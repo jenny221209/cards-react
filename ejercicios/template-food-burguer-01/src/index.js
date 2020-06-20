@@ -1,12 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
+
+import { Router, Route, Switch } from "react-router";
+import { createBrowserHistory } from "history";
+
+// Componentes NC 
+import PageInicio from 'views/pages/Page-Incicio-1';
+import PageMenu from 'views/pages/Page-Menu';
+
+var hist = createBrowserHistory();
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router history={hist}>
+      <Switch>
+        <Route path='/section-menu' component={PageMenu} />
+        <Route path='/' component={PageInicio} />
+      </Switch>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
