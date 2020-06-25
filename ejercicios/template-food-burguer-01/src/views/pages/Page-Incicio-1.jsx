@@ -9,6 +9,9 @@ function PageInicio () {
             <PagesInicio />
         </Fragment>
     );
+
+
+    
 }
 
 export default PageInicio;

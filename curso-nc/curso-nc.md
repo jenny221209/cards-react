@@ -52,7 +52,7 @@
     - [COMPONENTES NC](#COMPONENTES-NC)
     - [REACT-ROUTER-DOM](#REACT-ROUTER-DOM)
     - [HISTORY](#HISTORY)
-
+    - [PATH](#PATH)
          
 <br><br>
 
@@ -751,7 +751,26 @@ Genera una copia del arbol de elementos del navegador para solo hacer los minimo
                         </Switch>
                     </Router>
 
+### PATH
 
+    * path (Camino): El path es la libreria con la que configuramos el arranque del proyecto.
+
+        - Por defecto esta configurado con la raiz del proyecto.
+
+        - Se puede cambiar con un archivo de configuración paraque inicie desde el src (Este archivo se debe poner en la carpeta raiz)
+
+        - Nombre del archivo: Por convencion se pone el nombre jsconfig.json
+
+         Código de archivo
+
+                        {
+                "compilerOptions": {
+                    "baseUrl": "src",
+                    "paths": {
+                    "*": ["src/*"]
+                    }
+                }
+                }
 
 
 
