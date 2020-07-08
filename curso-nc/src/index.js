@@ -13,10 +13,14 @@ import StyleLine from "views/1-basico/style/StyleInLine";
 import FuentesGoogle from 'views/1-basico/fuentes-tipograficas/FuentesGoogle';
 import FuentesGoogle02 from 'views/1-basico/fuentes-tipograficas/FuentesGoogle02';
 import GridAll from "views/componentes-material-ui/grid/GridAll"
+ import MainProps from "views/1-basico/props/MainProps";
+ import Props from "views/1-basico/props/Props"
+ import MainProps2 from "views/1-basico/props/MainProps2"
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <GridAll />
+    <MainProps2 /> 
   </React.StrictMode>,
   document.getElementById('root')
 );
