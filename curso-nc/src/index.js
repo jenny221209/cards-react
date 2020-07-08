@@ -9,10 +9,14 @@ import OperacionesMatematicas from "views/2-intermedio/operaciones-matematicas/O
 
 // Routes
 import Rutas from './routes/routes';
+import StyleLine from "views/1-basico/style/StyleInLine";
+import FuentesGoogle from 'views/1-basico/fuentes-tipograficas/FuentesGoogle';
+import FuentesGoogle02 from 'views/1-basico/fuentes-tipograficas/FuentesGoogle02';
+import GridAll from "views/componentes-material-ui/grid/GridAll"
 
 ReactDOM.render(
   <React.StrictMode>
-    <Rutas/>
+    <GridAll />
   </React.StrictMode>,
   document.getElementById('root')
 );

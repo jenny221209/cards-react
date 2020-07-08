@@ -16,7 +16,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Router history={hist}>
       <Switch>
-        <Route path='/section-menu' component={PageMenu} />
+        <Route path='/page-menu' component={PageMenu} />
         <Route path='/' component={PageInicio} />
       </Switch>
     </Router>
