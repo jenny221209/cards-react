@@ -495,6 +495,8 @@ Genera una copia del arbol de elementos del navegador para solo hacer los minimo
     * Esta función es un componente de React válido porque acepta un solo argumento de objeto “props” (que proviene de propiedades) con datos
         y devuelve un elemento de React. Llamamos a dichos componentes “funcionales” porque literalmente son funciones JavaScript.
 
+    * Las funciones solo aceptan propiedades ( props ) - ( Las clases si aceptan Props y State )
+
     * Codigo ejemplo de componente creado con una función 
 
     *  CREAR COMPONENTES CON FUNCIONES :
@@ -761,8 +763,6 @@ Genera una copia del arbol de elementos del navegador para solo hacer los minimo
             }
 
             export default Fuentes02 ;
-
-
 
 
 ### PROPS (PROPIEDADES)

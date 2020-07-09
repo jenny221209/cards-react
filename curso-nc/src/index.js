@@ -16,11 +16,14 @@ import GridAll from "views/componentes-material-ui/grid/GridAll"
  import MainProps from "views/1-basico/props/MainProps";
  import Props from "views/1-basico/props/Props"
  import MainProps2 from "views/1-basico/props/MainProps2"
-
+import ModProps from "views/1-basico/props/ModPropsMismoArchivo"
+import ModPropsMismoArchivoStyle from "views/1-basico/props/ModPropsMismoArchioStyles"
+import StateSintaxis1 from "views/1-basico/states/StateSintaxisBasica"
+import StateSintaxisConstructor from "views/1-basico/states/StateSintaxisConstructor"
 
 ReactDOM.render(
   <React.StrictMode>
-    <MainProps2 /> 
+    < StateSintaxisConstructor /> 
   </React.StrictMode>,
   document.getElementById('root')
 );
