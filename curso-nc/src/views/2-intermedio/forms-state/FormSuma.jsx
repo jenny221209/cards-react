@@ -12,8 +12,13 @@ class FormSuma extends Component {
         return(
             <Fragment>
                 <h2> Formulario Suma </h2>
-                <h2> Número1: </h2>
-                <h2> Número2: </h2>
+                <Button variant="contained" color="primary" href="#contained-buttons">
+                   Numero1
+                </Button>
+                <br /> <br />
+                <Button variant="contained" color="primary" href="#contained-buttons">
+                    Numero2
+                </Button>
                 <h2> 0 </h2>
                 <button> Sumar </button>
             </Fragment>
