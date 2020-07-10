@@ -8,22 +8,11 @@ import { createBrowserHistory } from "history";
 import OperacionesMatematicas from "views/2-intermedio/operaciones-matematicas/OperacionesMatematicas";
 
 // Routes
-import Rutas from './routes/routes';
-import StyleLine from "views/1-basico/style/StyleInLine";
-import FuentesGoogle from 'views/1-basico/fuentes-tipograficas/FuentesGoogle';
-import FuentesGoogle02 from 'views/1-basico/fuentes-tipograficas/FuentesGoogle02';
-import GridAll from "views/componentes-material-ui/grid/GridAll"
- import MainProps from "views/1-basico/props/MainProps";
- import Props from "views/1-basico/props/Props"
- import MainProps2 from "views/1-basico/props/MainProps2"
-import ModProps from "views/1-basico/props/ModPropsMismoArchivo"
-import ModPropsMismoArchivoStyle from "views/1-basico/props/ModPropsMismoArchioStyles"
-import StateSintaxis1 from "views/1-basico/states/StateSintaxisBasica"
-import StateSintaxisConstructor from "views/1-basico/states/StateSintaxisConstructor"
+import FormSuma from "views/2-intermedio/forms-state/FormSuma";
 
 ReactDOM.render(
   <React.StrictMode>
-    < StateSintaxisConstructor /> 
+    < FormSuma /> 
   </React.StrictMode>,
   document.getElementById('root')
 );
