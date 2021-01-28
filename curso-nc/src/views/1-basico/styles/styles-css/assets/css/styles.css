@@ -1,0 +1,25 @@
+
+/* Styles */
+
+.div {
+    background-color: brown;
+    height: 100px;
+}
+
+.btn-cancelar {
+    padding: 5px 15px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: chartreuse;
+}
+
+.btn-guardar {
+    padding: 5px 15px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: cadetblue;
+}
