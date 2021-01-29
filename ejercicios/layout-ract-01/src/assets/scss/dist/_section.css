@@ -1,0 +1,14 @@
+.section {
+  background-color: yellow;
+}
+
+.section__div {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10;
+}
+
+.section__texto {
+  color: white;
+  text-align: center;
+}

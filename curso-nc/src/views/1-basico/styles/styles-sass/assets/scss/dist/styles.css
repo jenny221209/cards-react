@@ -1,0 +1,22 @@
+.div-sass {
+  background-color: burlywood;
+  height: 100px;
+}
+
+.button-cancelar {
+  color: white;
+  background-color: violet;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.button-guardar {
+  color: white;
+  background-color: salmon;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
