@@ -10,3 +10,4 @@
 ### Instalación de dependencias
 
     -npm i styled-components
+    -npm i react-router-dom
