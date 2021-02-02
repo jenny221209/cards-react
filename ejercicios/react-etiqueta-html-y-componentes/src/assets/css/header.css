@@ -1,0 +1,44 @@
+
+.container {
+    background-image: url('../img/fondo.jpg');
+    height: 400px;
+    
+}
+
+.container__contenedor {
+    margin: auto;
+    width: 30%;
+}
+
+.container__typography-titulo {
+    margin-top: 50px;
+    margin-bottom: 5px;
+    font-weight: 50px;
+    text-align: center;
+    
+}
+
+.container__typography-text {
+    text-align: center;
+}
+
+.container__div-button {
+    margin: auto;
+    padding:30px;
+}
+
+.container__bloque {
+    margin: auto;
+    width: 30%;
+}
+
+.container__text {
+    text-align: center;
+}
+
+
+.gridcontainer__div-bloque {
+    background-color: brown;
+    width: 40%;
+    margin: auto;
+}

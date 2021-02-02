@@ -10,9 +10,6 @@ import ViewsTypografia from './views/ViewsTypografia'
 import ViewsMenus from './views/ViewsMenus'
 
 
-
-
-
 //Styles
 import './assets/css/app.css';
 
