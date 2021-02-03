@@ -2,6 +2,7 @@
 .container {
     background-image: url('../img/fondo.jpg');
     height: 400px;
+   
     
 }
 
@@ -27,18 +28,3 @@
     padding:30px;
 }
 
-.container__bloque {
-    margin: auto;
-    width: 30%;
-}
-
-.container__text {
-    text-align: center;
-}
-
-
-.gridcontainer__div-bloque {
-    background-color: brown;
-    width: 40%;
-    margin: auto;
-}

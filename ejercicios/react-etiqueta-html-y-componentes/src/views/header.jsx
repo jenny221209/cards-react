@@ -18,7 +18,7 @@ const header = () => {
 
                     <Typography className='container__typography-titulo' h2 textWhite>Lorem ipsum dolor sit</Typography>
 
-                    <Typography className='container__typography-text' p2 textGray50> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, facere distinctio. Officia deleniti a,
+                    <Typography className='container__typography-text' p2 textWhite> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, facere distinctio. Officia deleniti a,
                             perspiciatis vel sit impedit, optio eaque molestiae dolor incidunt rem labore officiis veniam voluptatum, quia reprehenderit</Typography>
 
                 </GridContainer>
@@ -30,35 +30,6 @@ const header = () => {
                     </FlexContainer>
 
                 </GridContainer>
-            </GridContainer>
-
-            <GridContainer>
-            <GridContainer className='container__dos'>
-                <div className='container__bloque'>
-                    <Typography className='container__text' h2> Lorem, ipsum dolor</Typography>
-                    <Typography p2>  dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptate, debitis reiciendis natus ratione perspiciatis quasi soluta aperiam nam voluptas</Typography>
-
-                </div>
-            </GridContainer>
-
-
-            <GridContainer className='gridcontainer' gridCols3>
-                <div className='gridcontainer__div-bloque'>
-                    <Typography className='gridcontainer__titulo' h2> Lorem </Typography>
-                    <Typography className='gridcontainer__text'p2>Lorem ipsum, dolor sit amet consectetur a
-                    dipisicing elitLorem ipsum, consectetur adipisicing elit.</Typography>
-                </div>
-
-                <div className='gridcontainer__div-bloque'>
-                    <Typography className='gridcontainer__titulo' h2> Lorem </Typography>
-                    <Typography className='gridcontainer__text' p2>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</Typography>
-                </div>
-
-                <div className='gridcontainer__div-bloque'>
-                    <Typography  className='gridcontainer__titulo' h2> Lorem </Typography>
-                    <Typography className='gridcontainer__text' p2> Lorem ipsum, dolor sit amet consectetur adipisicing elit.</Typography>
-                </div>
-            </GridContainer>
             </GridContainer>
 
         </Fragment>

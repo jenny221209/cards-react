@@ -1,0 +1,32 @@
+
+.container__bloque {
+    margin: auto;
+    width: 30%;
+}
+
+.container__titulo {
+    text-align: center;
+    margin-top:40px;
+}
+
+.container__text {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.gridcontainer {
+    display: grid;
+    margin-top: 20px;
+}
+
+
+.gridcontainer__div-bloque {
+    width: 40%;
+    margin: auto; 
+    padding: 5px;
+}
+
+.gridcontainer__titulo {
+    margin-bottom: 5px;
+}
+

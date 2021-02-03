@@ -3,7 +3,11 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 
 
 // Views
+import Menu from './components/menus/menu-basic-01'
 import Header from './views/header'
+import Section from './views/section'
+
+
 
 
 //Styles
@@ -13,8 +17,9 @@ function App() {
   return (
     <Router>
       <div>
-        <menu/>
+          <Menu/>
           <Header/>
+          <Section/>
       </div>
     </Router> 
   );
