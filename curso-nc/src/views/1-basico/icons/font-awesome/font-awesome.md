@@ -9,6 +9,8 @@
     $ npm i --save @fortawesome/fontawesome-svg-core
     $ npm install --save @fortawesome/free-solid-svg-icons
     $ npm install --save @fortawesome/react-fontawesome
+    $ npm install --save @fortawesome/free-brands-svg-icons
+    $ npm install --save @fortawesome/free-regular-svg-icons
 
     Ejemplo: 
     <code>
@@ -18,8 +20,7 @@
     import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
     import { faCoffee } from '@fortawesome/free-solid-svg-icons'
     import { faBabyCarriage } from '@fortawesome/free-solid-svg-icons'
-
-
+    
 
     const fontAwesome = () => {
         return (
